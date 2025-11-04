@@ -12,7 +12,7 @@ LABEL_MAP = {
 }
 MAX_LENGTH = 128
 
-
+os.environ['HF_TOKEN'] = "HF_TOKEN"
 
 @st.cache_resource
 def load_model():
@@ -45,3 +45,4 @@ if st.button("അനാലൈസ് ചെയ്യുക"):
                 st.error(f"പ്രകടനം: **{result}**")
             else:
                 st.info(f"പ്രകടനം: **{result}**")
+
