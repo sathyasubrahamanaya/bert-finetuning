@@ -5,7 +5,7 @@ from model_backend import SentimentModel
 import os
 
 MODEL_NAME_OR_PATH = "ai4bharat/indic-bert"
-WEIGHTS_PATH = "indic_bert_sentiment_model.pth"
+WEIGHTS_PATH = "indic_bert_sentiment_model.pth" #a local path or sathyavgc/indic-bert-sentiment-malayalam from HF
 LABEL_MAP = {
     "negative": 0,
     "positive": 1
@@ -45,4 +45,5 @@ if st.button("അനാലൈസ് ചെയ്യുക"):
                 st.error(f"പ്രകടനം: **{result}**")
             else:
                 st.info(f"പ്രകടനം: **{result}**")
+
 
